@@ -1,0 +1,72 @@
+﻿@model IEnumerable<CommunityCares_Web.Models.Donation>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Donaciones</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            
+            <th>
+               Donaciones
+            </th>
+           
+           
+            <th>
+                Donador
+            </th>
+            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                @if(item.DescriptionItems == null)
+                {
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DescriptionMonto)
+                    </td>
+                }
+                else if (item.DescriptionMonto == null)
+                {
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DescriptionItems)
+                    </td>
+                }
+                else
+                {
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DescriptionMonto)
+                    
+                        @Html.DisplayFor(modelItem => item.DescriptionItems)
+                    </td>
+
+                }
+
+                
+                
+                @if (item.IsAnonymus == "N")
+                {
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdDonnorsNavigation.IdNavigation.Name)
+                    
+                        @Html.DisplayFor(modelItem => item.IdDonnorsNavigation.IdNavigation.LastName)
+                    </td>
+                }
+                else
+                {
+                    <td>
+                        Donacion Anonima
+                    </td>
+                }
+               
+               
+            </tr>
+        }
+    </tbody>
+</table>

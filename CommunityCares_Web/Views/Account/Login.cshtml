@@ -1,0 +1,28 @@
+﻿@model CommunityCares_Web.Models.LoginUser
+<div>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div class="text-center">
+            <p class="display-4">Welcome @User.Identity.Name</p>
+            <h3>Successful login</h3>
+        </div>
+@*
+        <form method="post" asp-action="Logout" asp-controller="Account">
+            <button type="submit" class="r-view-all">Logout</button>
+        </form>*@
+    }
+    else
+    {
+        <form method="post" asp-action="Login" asp-controller="Account">
+            <div class="form-group">
+                <label>Email</label>
+                <input asp-for="User.Email" type="email" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input asp-for="User.Password" type="password" class="form-control" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    }
+</div>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CommunityCares_Web.props" />
+</Project>

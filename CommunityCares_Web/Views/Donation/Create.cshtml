@@ -1,0 +1,100 @@
+﻿@model CommunityCares_Web.Models.Donation
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Donation</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <div>
+            <button onclick="showFirstInput()">Donar viberes </button>
+            <button onclick="showSecondInput()">Donar dinero</button>
+            <button onclick="showBothInput()">Ambos</button>
+        </div>
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+           
+            <div class="form-group">
+                <label id="label1" class="control-label" style="display: none;">Ingrese viberes que esta donando</label>
+                <input id="input1" asp-for="DescriptionItems" class="form-control" style="display: none;"  required/>
+                <span asp-validation-for="DescriptionItems" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label id="label2" class="control-label" style="display: none;">Ingrese monto total a donar</label>
+                <input id="input2" asp-for="DescriptionMonto" class="form-control" style="display: none;" required />
+                <span asp-validation-for="DescriptionMonto" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="Status" class="control-label"></label>
+                <input asp-for="Status" class="form-control" value="1" />
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Mantener Anonimato</label>
+
+                <select asp-for="IsAnonymus" class="form-control">
+                    <option value="Y">Yes</option>
+                    <option value="N">No</option>
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="IdCollect" class="control-label"></label>
+                <select asp-for="IdCollect" class="form-control" asp-items="ViewBag.IdCollect"></select>
+
+
+            </div>
+            <div class="form-group">
+                <label asp-for="Hour" class="control-label"></label>
+                <input asp-for="Hour" class="form-control" type="time" />
+                <span asp-validation-for="Hour" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<script>
+    function showFirstInput() {
+        document.getElementById("input1").style.display = "block";
+        document.getElementById("input2").style.display = "none";
+        document.getElementById("label1").style.display = "block";
+        document.getElementById("label2").style.display = "none";
+        //document.getElementById("input2")removeAttribute("required")
+        //document.getElementById("input1")setAttribute("required", "required")
+    }
+
+    function showSecondInput() {
+        document.getElementById("input1").style.display = "none";
+        document.getElementById("input2").style.display = "block";
+        document.getElementById("label1").style.display = "none";
+        document.getElementById("label2").style.display = "block";
+        //document.getElementById("input1")removeAttribute("required")
+        //document.getElementById("input2")setAttribute("required", "required")
+    }
+    function showBothInput() {
+        document.getElementById("input1").style.display = "block";
+        document.getElementById("input2").style.display = "block";
+        document.getElementById("label1").style.display = "block";
+        document.getElementById("label2").style.display = "block";
+        //document.getElementById("input2")setAttribute("required", "required")
+        //document.getElementById("input1")setAttribute("required", "required")
+    }
+</script>

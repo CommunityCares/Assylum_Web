@@ -1,0 +1,97 @@
+﻿@model CommunityCares_Web.Models.ModelMulti
+
+<h2>Create</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Person.Name">Name</label>
+        <input asp-for="Person.Name" class="form-control" />
+
+    </div>
+    <div class="form-group">
+        <label asp-for="Person.LastName"></label>
+        <input asp-for="Person.LastName" class="form-control" />
+
+    </div>
+    <div class="form-group">
+        <label asp-for="Person.SecondLastName"></label>
+        <input asp-for="Person.SecondLastName" class="form-control" />
+
+    </div>
+    <div hidden class="form-group">
+        <label asp-for="Person.Status"></label>
+        <input asp-for="Person.Status" class="form-control" />
+    </div>
+    <div hidden class="form-group">
+        <label asp-for="Person.RegisterDate"></label>
+        <input asp-for="Person.RegisterDate" class="form-control" />
+
+    </div>
+    <div class="form-group">
+        <label asp-for="Person.Ci"></label>
+        <input asp-for="Person.Ci" class="form-control" />
+
+    </div>
+    <div class="form-group">
+        <label asp-for="Person.PhoneNumber"></label>
+        <input asp-for="Person.PhoneNumber" class="form-control" />
+
+    </div>
+
+
+    <!-- User -->
+
+
+    <div class="form-group">
+        <label asp-for="User.Password"></label>
+        <input asp-for="User.Password" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="confirmPassword">ConfirmPassword</label>
+        <input name="confirmPassword" class="form-control" id="confirmPassword" />
+        <span id="confirmPasswordError" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="User.Role"></label>
+        <input asp-for="User.Role" class="form-control" />
+
+    </div>
+    <div class="form-group">
+        <label asp-for="User.Email"></label>
+        <input asp-for="User.Email" class="form-control" />
+
+    </div>
+
+    <!-- Admin -->
+    @*    <div class="form-group">
+    <label asp-for="Admin.IdAssylum">IdAssylum</label>
+    <input asp-for="Admin.IdAssylum" class="form-control" />
+
+    </div>*@
+    <div class="form-group">
+        <label for="IdAssylum">Assylum</label>
+        <select name="IdAssylum" class="form-control">
+            @foreach (var item in (SelectList)ViewData["IdAssylum"])
+            {
+                <option value="@item.Value">@item.Text</option>
+            }
+        </select>
+
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+@section scripts {
+    <script>
+        document.getElementById('confirmPassword').addEventListener('blur', function () {
+            var password = document.getElementById('User_Password').value;
+            var confirmPassword = this.value;
+
+            if (password !== confirmPassword) {
+                document.getElementById('confirmPasswordError').textContent = 'La contraseña y la confirmación de contraseña no coinciden.';
+            } else {
+                document.getElementById('confirmPasswordError').textContent = '';
+            }
+        });
+    </script>
+}

@@ -1,0 +1,130 @@
+﻿@model CommunityCares_Web.Models.Assylum
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Assylum</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nit" class="control-label"></label>
+                <input asp-for="Nit" class="form-control" />
+                <span asp-validation-for="Nit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RepresentativeName" class="control-label"></label>
+                <input asp-for="RepresentativeName" class="form-control" />
+                <span asp-validation-for="RepresentativeName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BussinessEmail" class="control-label"></label>
+                <input asp-for="BussinessEmail" class="form-control" />
+                <span asp-validation-for="BussinessEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CellphoneNumber" class="control-label"></label>
+                <input asp-for="CellphoneNumber" class="form-control" />
+                <span asp-validation-for="CellphoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+
+            <div class="form-group" hidden>
+                <label asp-for="Latitude" class="control-label"></label>
+                <input asp-for="Latitude" class="form-control" id="Latitude" />
+                <span asp-validation-for="Latitude" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="Longitude" class="control-label"></label>
+                <input asp-for="Longitude" class="form-control" id="Longitude" />
+                <span asp-validation-for="Longitude" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="Status" class="control-label"></label>
+                <input asp-for="Status" class="form-control" value="1" />
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Region" class="control-label"></label>
+
+                <select asp-for="Region" class="control-label">
+                    <option value="Cochabamba">Cochabamba</option>
+                    <option value="Quillacollo">Quillacollo</option>
+                    <option value="Sacaba">Sacaba</option>
+                    <option value="Tiquipaya">Tiquipaya</option>
+                    <option value="Colcapirhua">Colcapirhua</option>
+                    <option value="Vinto">Vinto </option>
+                    <option value="Sipe Sipe">Sipe Sipe </option>
+                </select>
+            </div>
+            <br />
+            <div id="map"></div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+<script>
+    var mapa;
+    var marcador;
+
+    function initMap() {
+        mapa = L.map('map').setView([-17.3866329, -66.2418649], 6);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+            maxZoom: 18,
+        }).addTo(mapa);
+
+        marcador = L.marker([-17.3866329, -66.2418649], { draggable: true, opacity: 0 }).addTo(mapa);
+
+        var primerDblClick = true;
+
+        mapa.on('dblclick', function (e) {
+            var latitud = e.latlng.lat;
+            var longitud = e.latlng.lng;
+            document.getElementById("Latitude").value = latitud;
+            document.getElementById("Longitude").value = longitud;
+
+            if (primerDblClick) {
+                marcador.setLatLng([latitud, longitud]);
+                marcador.setOpacity(1);
+                primerDblClick = false;
+            } else {
+                marcador.setLatLng([latitud, longitud]);
+            }
+        });
+    }
+</script>
+
+<script>
+    window.onload = function () {
+        initMap();
+    };
+</script>

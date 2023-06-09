@@ -1,0 +1,185 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CommunityCares_Web
+build_property.RootNamespace = CommunityCares_Web
+build_property.ProjectDir = C:\Users\Anthony\Downloads\CommunityCares_Web-Marcelo-Apala (1)\CommunityCares_Web-Marcelo-Apala\CommunityCares_Web\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Anthony\Downloads\CommunityCares_Web-Marcelo-Apala (1)\CommunityCares_Web-Marcelo-Apala\CommunityCares_Web
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Assylum/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzeWx1bVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Assylum/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzeWx1bVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Assylum/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzeWx1bVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Assylum/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzeWx1bVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Assylum/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzeWx1bVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Campaign/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGFpZ25cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Campaign/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGFpZ25cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Campaign/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGFpZ25cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Campaign/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGFpZ25cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Campaign/Edit2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGFpZ25cRWRpdDIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Campaign/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGFpZ25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Campaign/Index2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGFpZ25cSW5kZXgyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Campaign/Index3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGFpZ25cSW5kZXgzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Collect/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sbGVjdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Collect/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sbGVjdFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Collect/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sbGVjdFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Collect/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sbGVjdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Collect/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sbGVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Donation/ConfirmarDonacion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYXRpb25cQ29uZmlybWFyRG9uYWNpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Donation/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYXRpb25cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Donation/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYXRpb25cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Donation/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYXRpb25cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Donation/DonacionesRecibidas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYXRpb25cRG9uYWNpb25lc1JlY2liaWRhcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Donation/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYXRpb25cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Donation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYXRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Donation/Index2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYXRpb25cSW5kZXgyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Donation/Index3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYXRpb25cSW5kZXgzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Image/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Image/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Image/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Image/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Image/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/ModelMulti/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxNdWx0aVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/ModelMulti/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxNdWx0aVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Anthony/Downloads/CommunityCares_Web-Marcelo-Apala (1)/CommunityCares_Web-Marcelo-Apala/CommunityCares_Web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-yif9mwuet2

@@ -1,0 +1,120 @@
+﻿@using System.Security.Claims
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>Default | Equation - Multipurpose Bootstrap Dashboard Template </title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link href="~/css/front/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/front/assets/css/plugins.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <link href="~/css/front/plugins/maps/vector/jvector/jquery-jvectormap-2.0.3.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/front/plugins/charts/chartist/chartist.css" rel="stylesheet" type="text/css">
+    <link href="~/css/front/assets/css/default-dashboard/style.css" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <style>
+        #map {
+            height: 400px;
+            width: 800px;
+        }
+    </style>
+</head>
+<body class="default-sidebar">
+    <header>
+        <nav class="list-unstyled menu-categories d-lg-flex justify-content-lg-around mb-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Community Cares</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-row mr-auto">
+                        
+                       
+                        @if (User.IsInRole("Admin"))
+                        {
+
+                            <li class="nav-item dropdown language-dropdown mr-5  d-lg-inline-block d-none">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Assylum" asp-action="Index">Assylums</a>
+                            </li>
+                            <li class="nav-item dropdown language-dropdown mr-5  d-lg-inline-block d-none">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="ModelMulti" asp-action="Index">Users</a>
+                            </li>
+                            <li class="nav-item dropdown language-dropdown mr-5  d-lg-inline-block d-none">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Campaign" asp-action="Index2">Campañas Vigentes</a>
+                            </li>
+                            <li class="nav-item dropdown language-dropdown mr-5  d-lg-inline-block d-none">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Campaign" asp-action="Index3">Campañas Cerradas</a>
+                            </li>
+                            
+                        }
+
+                        @if (User.IsInRole("Donor"))
+                        {
+
+                        }
+                        @if (!User.IsInRole("Admin") && !User.IsInRole("Donor"))
+                        {
+                            // No se muestra ninguna etiqueta si el usuario no tiene ningún rol asignado
+                        }
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item dropdown language-dropdown mr-5  d-lg-inline-block d-none">
+                                <a class="nav-link text-dark">@User.Identity.Name</a>
+                            </li>
+                            <li class ="nav-item dropdown language-dropdown mr-5  d-lg-inline-block d-none">
+                                <form method="post" asp-controller="Account" asp-action="Logout" class="nav-link text-dark">
+                                    <input type="submit" value="Logout" />
+                                </form>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item dropdown language-dropdown mr-5  d-lg-inline-block d-none"><a class="nav-link text-dark" asp-controller="Account" asp-action="Login">Login</a></li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main-container" id="container">
+        <main id="content" class="main-content">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="footer-section theme-footer">
+        <div>@DateTime.Now</div>
+    </footer>
+
+    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <script src="~/css/front/assets/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="~/css/front/bootstrap/js/popper.min.js"></script>
+    <script src="~/css/front/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/css/front/plugins/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="~/css/front/assets/js/app.js"></script>
+    <script>
+        $(document).ready(function () {
+            App.init();
+        });
+    </script>
+    <script src="~/css/front/assets/js/custom.js"></script>
+    <!-- END GLOBAL MANDATORY SCRIPTS -->
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    <script src="~/css/front/plugins/charts/chartist/chartist.js"></script>
+    <script src="~/css/front/plugins/maps/vector/jvector/jquery-jvectormap-2.0.3.min.js"></script>
+    <script src="~/css/front/plugins/maps/vector/jvector/worldmap_script/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="~/css/front/plugins/calendar/pignose/moment.latest.min.js"></script>
+    <script src="~/css/front/plugins/calendar/pignose/pignose.calendar.js"></script>
+    <script src="~/css/front/plugins/progressbar/progressbar.min.js"></script>
+    <script src="~/css/front/assets/js/default-dashboard/default-custom.js"></script>
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

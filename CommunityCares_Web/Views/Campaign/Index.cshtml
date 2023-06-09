@@ -1,0 +1,78 @@
+﻿@model IEnumerable<CommunityCares_Web.Models.Campaign>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Requirement)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InitialDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CloseDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RegisterDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdAssylumNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Requirement)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.InitialDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CloseDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RegisterDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdAssylumNavigation.Id)
+                </td>
+                <td>
+                    <a asp-action="Create" asp-controller="Image" asp-route-id="@item.Id">Agrear Imagenes</a><br>
+                    <a asp-action="Index" asp-controller="Image" asp-route-id="@item.Id">Ver mas Informacion</a><br>
+                    <a asp-action="Create" asp-controller="Collect" asp-route-id="@item.Id">Definir fecha de recojo</a> <br>
+                    <a asp-action="Index" asp-controller="Collect" asp-route-id="@item.Id">Ver Fechas de Recojo</a><br>
+                    <a asp-area="" asp-controller="Donation" asp-route-id="@item.Id" asp-action="ConfirmarDonacion">Ver Donaciones Pendientes</a><br>
+                    <a asp-area="" asp-controller="Donation" asp-route-id="@item.Id" asp-action="DonacionesRecibidas">Donaciones Recibidas</a><br>
+                   
+                    <a asp-action="Edit2"  asp-route-id="@item.Id">Cerrar Campaña</a>|
+                   
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

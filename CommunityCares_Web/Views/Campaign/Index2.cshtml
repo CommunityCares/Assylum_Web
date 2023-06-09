@@ -1,0 +1,24 @@
+﻿@model IEnumerable<CommunityCares_Web.Models.Campaign>
+<br />
+<h1 class="text-uppercase">Campañas Vigentes</h1>
+<br />
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    @foreach (var item in Model)
+    {
+        <div class="col">
+            <div class="card text-center" style="width: 18rem;">
+                <div class="card-body">
+                    <h2 class="card-title">@item.IdAssylumNavigation.Name</h2>
+                    <p class="card-text">Requerimientos: @item.Name</p>
+                    <p class="card-text">Requerimientos: @item.Requirement</p>
+                    <p class="card-text">Fehca de cierre: @item.CloseDate</p>
+                    
+
+                    <a asp-action="Index" asp-controller="Image" asp-route-id="@item.Id" class="btn btn-primary">Ver Informacion</a>
+                    <a asp-action="Create" asp-controller="Donation" asp-route-id="@item.Id" class="btn btn-primary">Donar</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
